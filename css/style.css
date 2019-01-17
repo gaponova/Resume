@@ -14,3 +14,45 @@ img {
   height: auto;
 }
 
+.wrapper {
+  padding: 0 15px;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  position: relative;
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  width: 20%;
+  background-color: #d4ebff;
+}
+
+main {
+  width: 80%;
+  margin-left: auto;
+}
+
+.home {
+  background: linear-gradient(to top, rgba(12, 111, 228, 0.5), rgba(12, 111, 228, 0.5)),
+  url(../images/main-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+footer {
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
