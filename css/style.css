@@ -1,5 +1,7 @@
-*, *::before, *::after {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
@@ -14,6 +16,12 @@ img {
   height: auto;
 }
 
+.clearfix::after {
+  content:"";
+  display: table;
+  clear: both;
+  }
+
 .wrapper {
   padding: 0 15px;
 }
@@ -24,26 +32,24 @@ img {
   position: relative;
 }
 
-.row {
-  display: flex;
-  position: relative;
-}
-
 .sidebar {
-  position: sticky;
-  top: 0;
+  float: left;
   width: 20%;
   background-color: #d4ebff;
+  position: sticky;
+  top: 0;
+  height: 100vh;
 }
 
 main {
+  float: left;
   width: 80%;
-  margin-left: auto;
 }
 
 .home {
+  height: 100vh;
   background: linear-gradient(to top, rgba(12, 111, 228, 0.5), rgba(12, 111, 228, 0.5)),
-  url(../images/main-bg.jpg);
+              url(../images/main-bg.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
