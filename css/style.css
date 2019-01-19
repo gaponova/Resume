@@ -24,7 +24,7 @@ img {
   position: relative;
 
   display: grid;
-  grid-template-rows:  ;
+  grid-template-rows:auto auto;
   grid-template-columns: 20% 1fr;
   grid-template-areas: "sidebar main"
                        "footer footer";
@@ -32,7 +32,7 @@ img {
 
 .sidebar {
   position: sticky;
-  
+  height:100vh;
   top: 0;
   background-color: #d4ebff;
   grid-area: sidebar;
