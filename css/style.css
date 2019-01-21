@@ -1,5 +1,7 @@
-*, *::before, *::after {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
@@ -15,24 +17,22 @@ img {
 }
 
 .wrapper {
-  padding: 0 15px;
+  /* padding: 0 15px; */
 }
 
 .container {
   max-width: 1600px;
   margin: 0 auto;
   position: relative;
-
   display: grid;
-  grid-template-rows:auto auto;
+  grid-template-rows: 1fr auto;
   grid-template-columns: 20% 1fr;
-  grid-template-areas: "sidebar main"
-                       "footer footer";
+  grid-template-areas: "sidebar main" "footer footer";
 }
 
 .sidebar {
   position: sticky;
-  height:100vh;
+  height: 100vh;
   top: 0;
   background-color: #d4ebff;
   grid-area: sidebar;
@@ -44,8 +44,7 @@ main {
 
 .home {
   height: 100vh;
-  background: linear-gradient(to top, rgba(12, 111, 228, 0.5), rgba(12, 111, 228, 0.5)),
-              url(../images/main-bg.jpg);
+  background: linear-gradient(to top, rgba(12, 111, 228, 0.8), rgba(12, 111, 228, 0.8)), url(../images/main-bg.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -59,4 +58,20 @@ footer {
   z-index: 10;
   grid-area: footer;
   background-color: #d4ebff;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "sidebar"
+                         "main"
+                         "footer";
+  }
+
+  .sidebar {
+    position: static;
+    height: auto;
+    
+  }
 }
