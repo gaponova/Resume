@@ -51,6 +51,38 @@ main {
   background-repeat: no-repeat;
 }
 
+.about {
+  height: 100vh;
+  background: linear-gradient(to top, rgba(12, 111, 228, 0.8), rgba(12, 111, 228, 0.8)), url(../images/mountain-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.resume {
+  height: 100vh;
+  background: linear-gradient(to top, rgba(12, 111, 228, 0.8), rgba(12, 111, 228, 0.8)), url(../images/mountain-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.skiles {
+  height: 100vh;
+  background: linear-gradient(to top, rgba(12, 111, 228, 0.8), rgba(12, 111, 228, 0.8)), url(../images/rock-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.portfolio {
+  height: 100vh;
+  background: linear-gradient(to top, rgba(12, 111, 228, 0.8), rgba(12, 111, 228, 0.8)), url(../images/mountain-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .copyright {
   grid-area: copyright;
   position: sticky;
@@ -59,6 +91,14 @@ main {
   z-index: 10;
   background-color: #d4ebff;
   text-align: center;
+}
+
+.contact {
+  height: 100vh;
+  background: linear-gradient(to top, rgba(12, 111, 228, 0.8), rgba(12, 111, 228, 0.8)), url(../images/rock-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 footer {
