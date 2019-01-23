@@ -27,7 +27,8 @@ img {
   display: grid;
   grid-template-rows: 1fr auto;
   grid-template-columns: 20% 1fr;
-  grid-template-areas: "sidebar main" "footer footer";
+  grid-template-areas: "sidebar main" 
+                        "copyright footer";
 }
 
 .sidebar {
@@ -48,6 +49,14 @@ main {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.copyright {
+  grid-area: copyright;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
 }
 
 footer {
