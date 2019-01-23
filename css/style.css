@@ -28,7 +28,7 @@ img {
   grid-template-rows: 1fr auto;
   grid-template-columns: 20% 1fr;
   grid-template-areas: "sidebar main" 
-                        "copyright nav";
+                        "copyright footer";
 }
 
 .sidebar {
@@ -101,13 +101,13 @@ main {
   background-repeat: no-repeat;
 }
 
-nav {
+footer {
   position: sticky;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 10;
-  grid-area: nav;
+  grid-area: footer;
   background-color: #d4ebff;
   text-align: center;
 }
@@ -118,7 +118,7 @@ nav {
     grid-template-columns: 1fr;
     grid-template-areas: "sidebar"
                          "main"
-                         "nav"
+                         "footer"
                          "copyright";
   }
 
