@@ -123,6 +123,7 @@ main {
   background-position: center center;
   background-repeat: no-repeat;
 
+  padding: 10px;
   padding-bottom: 50px;
 }
 
@@ -139,7 +140,7 @@ main {
 .home__hi {
   font-family: Open Sans, sans-serif;
   font-size: 60px;
-  line-height: 30px;
+  line-height: 60px;
   font-weight: 700;
   letter-spacing: 2px;
   color: #fff;
@@ -157,14 +158,91 @@ main {
 }
 
 .about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   height: 100vh;
   background: linear-gradient(to top, rgba(12, 111, 228, 0.8), rgba(12, 111, 228, 0.8)), url(../images/mountain-bg.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+
+  padding: 10px;
+  padding-bottom: 50px;
 }
 
+.about-block_desc {
+  width: calc(36% - 30px);
+  margin: 15px;
+}
 
+.about-block_num {
+  width: calc(20% - 30px);
+  margin: 15px;
+
+  text-align: right;
+}
+
+.about__welcome {
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 30px;
+  background-color: #263b56;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.about__hi {
+  font-family: Open Sans, sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.about__desc {
+  margin: 0;
+  font-family: Open Sans, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+}
+
+.about__text {
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  font-style: italoc;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.number-block {
+  margin-bottom: 50px;
+}
+
+.number-block:last-child {
+  margin-bottom: 0;
+}
+
+.number-block__num {
+  font-family: Open Sans, sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #fff;
+}
+
+.number-block__text {
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  color: #ffffff;
+}
 
 .resume {
   height: 100vh;
