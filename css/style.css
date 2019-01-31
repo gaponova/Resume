@@ -306,12 +306,104 @@ main {
   color: #ffffff;
 }
 
-.skiles {
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
   height: 100vh;
   background: linear-gradient(to top, rgba(12, 111, 228, 0.8), rgba(12, 111, 228, 0.8)), url(../images/rock-bg.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+.skills__welcome {
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 30px;
+  background-color: #263b56;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.skills__hi {
+  font-family: Open Sans, sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.skills-row {
+  display: flex;
+
+}
+
+.skills-box {
+  /* width: 50%;  */
+  margin: 15px;
+}
+
+.skills-box__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.skills-box__text {
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff;
+}
+
+.progress {
+  display: inline-block;
+  width: 200px;
+  height: 4px;
+  background-color: #00408b;
+  margin-left: 30px;
+}
+
+.progress__fill {
+  
+  height: 4px;
+  background-color: #fff;
+}
+
+.lang {
+  text-align: left;
+  padding: 0 20px;
+}
+
+.lang__title {
+  margin: 0;
+  font-family: Open Sans, sans-serif;
+  font-size: 12px;
+  line-height: 60px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.lang__img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.lang__geo {
+  font-family: Open Sans, sans-serif;
+  font-size: 12px;
+  line-height: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-right: 30px;
 }
 
 .portfolio {
