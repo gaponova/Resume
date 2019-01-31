@@ -81,7 +81,7 @@
                         <div class="resume-block resume-block_desc">
                             <span class="resume__welcome">I love my job and do well!</span>
                             <h2 class="resume__hi">Resume</h2>
-                            <h3 class="resume__desc">My name is John Doe. I‘m a UI/UX Designer</h3>
+                            <!-- <h3 class="resume__desc">My name is John Doe. I‘m a UI/UX Designer</h3> -->
                             <p class="resume__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
                         </div>
                         <div class="resume-block resume-block_num">
@@ -156,14 +156,45 @@
                     </div>
                 </section>
                 <section class="portfolio" id="portfolio">
-                    <span class="portfolio__welcome">Welcome to our portfolio !</span>
-                    <h2 class="portfolio__hi">Hello World !</h2>
-                    <h3 class="portfolio__desc">My name is John Doe. I‘m a UI/UX Designer</h3>
+                        <div class="portfolio-block portfolio-block_desc">
+                            <span class="portfolio__welcome">I love my job and do well!</span>
+                            <h2 class="portfolio__hi">portfolio</h2>
+                            <!-- <h3 class="portfolio__desc">My name is John Doe. I‘m a UI/UX Designer</h3> -->
+                            <p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                        </div>
+                        <div class="portfolio-block portfolio-block_num">
+                            <div class="number-block">
+                                <span class="number-block__num">ALL</span>
+                                <p class="number-block__text">240 items</p>
+                            </div>
+                            <div class="number-block">
+                                <span class="number-block__num">Web</span>
+                                    <p class="number-block__text">125 items</p>
+                            </div>
+                            <div class="number-block">
+                                <span class="number-block__num">Mockup</span>
+                                <p class="number-block__text">154 items</p>
+                            </div>
+                        </div>
                 </section>
                 <section class="contact" id="contact">
-                    <span class="contact__welcome">Welcome to our portfolio !</span>
-                    <h2 class="contact__hi">Hello World !</h2>
-                    <h3 class="contact__desc">My name is John Doe. I‘m a UI/UX Designer</h3>
+                        <div class="contact-block contact-block_desc">
+                                <span class="contact__welcome">Support 24 hours</span>
+                                <h2 class="contact__hi">contact</h2>
+                                <p class="contact__email">Email: JohnDoe@example.com</p>
+                                <p class="contact__adress">Adress: New York City, 254 str.</p>
+                                <p class="contact__fax">Fax: +1 999 888 777 444</p>
+                                <div class="phone">
+                                    <p class="phone__title">phone</p>
+                                    <img class="phone__img" src="images/usa.svg" alt="usa">
+                                    <span class="phone__geo">+1 999 888 777 444</span>
+                                    <img class="phone__img" src="images/russia.svg" alt="usa">
+                                    <span class="phone__geo">+789544514742</span>
+                                </div>
+                            </div>
+                            <div class="contact-block contact-block_map">
+                                    <div id="map" class="map"></div>
+                            </div>
                 </section>
             </main>
             <div class="copyright">
@@ -189,6 +220,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/wow.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+    <script type="text/javascript" src="js/map.js"></script>
     <script>
         new WOW().init();
     </script>
