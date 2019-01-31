@@ -160,6 +160,7 @@ main {
 
 .about {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   height: 100vh;
@@ -247,6 +248,7 @@ main {
 
 .resume {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 
@@ -309,6 +311,7 @@ main {
 
 .skills {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -343,7 +346,7 @@ main {
 
 .skills-row {
   display: flex;
-
+  flex-wrap: wrap;
 }
 
 .skills-box {
@@ -353,6 +356,7 @@ main {
 
 .skills-box__item {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 10px 0;
@@ -409,6 +413,7 @@ main {
 
 .portfolio {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 
@@ -471,6 +476,7 @@ main {
 
 .contact {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
@@ -577,6 +583,9 @@ main {
   z-index: 10;
   background-color: #d4ebff;
   text-align: center;
+  color: #37506b;
+  font-family: Open Sans, sans-serif;
+  font-size: 12px;
 }
 
 footer {
@@ -588,6 +597,24 @@ footer {
   grid-area: footer;
   background-color: #d4ebff;
   text-align: center;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav__link {
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #37506b;
+  text-transform: uppercase;
+  padding: 12px;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -609,4 +636,21 @@ footer {
   .copyright {
     position: static;
   }
+
+  .contact {
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  .contact-block_desc {
+    width: 80%;
+    
+  }
+  
+  .contact-block_map {
+    width: 80%;
+  }
+
+  .phone {
+    text-align: center; }
 }
