@@ -617,6 +617,21 @@ footer {
   margin: 0 10px;
 }
 
+@media screen and (max-width: 1368px) {
+  .sidebar-avatar__pic {
+    width: 80%;
+    margin-bottom: 18px;
+  }
+
+  .sidebar-social {
+    margin-bottom: 10px;
+  }
+
+  .sidebar-desc {
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .container {
     grid-template-rows: auto auto auto;
