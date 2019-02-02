@@ -628,6 +628,7 @@ footer {
   .sidebar {
     position: static;
     height: auto;
+    padding-bottom: 25px;
   }
   .portfolio-block_num {
     width: calc(35% - 30px);
@@ -657,5 +658,30 @@ footer {
   }
   .phone {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    display: block;
+    height: auto;
+    text-align: center;
+  }
+
+  .about__hi {
+    font-size: 50px;
+  }
+  .about-block_desc {
+    width: calc(100% - 30px);
+    margin-bottom: 50px;
+  }
+  .about-block_num {
+    display: flex;
+    justify-content: space-around;
+    width: calc(100% - 30px);
+    margin-bottom: 0;
+  }
+  .number-block {
+    margin: 15px;
   }
 }
