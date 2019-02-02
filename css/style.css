@@ -28,8 +28,7 @@ img {
   display: grid;
   grid-template-rows: 1fr auto;
   grid-template-columns: 20% 1fr;
-  grid-template-areas: "sidebar main" 
-                        "copyright footer";
+  grid-template-areas: "sidebar main" "copyright footer";
 }
 
 .sidebar {
@@ -40,7 +39,6 @@ img {
   grid-area: sidebar;
   padding: 30px 30px;
   text-align: center;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -116,14 +114,12 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   /* position: relative; */
   height: 100vh;
   background: linear-gradient(to top, rgba(12, 111, 228, 0.8), rgba(12, 111, 228, 0.8)), url(../images/main-bg.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-
   padding: 10px;
   padding-bottom: 50px;
 }
@@ -168,7 +164,6 @@ main {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-
   padding: 10px;
   padding-bottom: 50px;
 }
@@ -181,7 +176,6 @@ main {
 .about-block_num {
   width: calc(20% - 30px);
   margin: 15px;
-
   text-align: right;
 }
 
@@ -251,7 +245,6 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-
   height: 100vh;
   background: linear-gradient(to top, rgba(12, 111, 228, 0.8), rgba(12, 111, 228, 0.8)), url(../images/main-bg.jpg);
   background-size: cover;
@@ -315,7 +308,6 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-
   height: 100vh;
   background: linear-gradient(to top, rgba(12, 111, 228, 0.8), rgba(12, 111, 228, 0.8)), url(../images/rock-bg.jpg);
   background-size: cover;
@@ -378,7 +370,6 @@ main {
 }
 
 .progress__fill {
-  
   height: 4px;
   background-color: #fff;
 }
@@ -416,7 +407,6 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-
   height: 100vh;
   background: linear-gradient(to top, rgba(12, 111, 228, 0.8), rgba(12, 111, 228, 0.8)), url(../images/mountain-bg.jpg);
   background-size: cover;
@@ -479,7 +469,6 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
   height: 100vh;
   background: linear-gradient(to top, rgba(12, 111, 228, 0.8), rgba(12, 111, 228, 0.8)), url(../images/rock-bg.jpg);
   background-size: cover;
@@ -495,7 +484,6 @@ main {
 .contact-block_map {
   width: calc(50% - 30px);
   margin: 15px;
- 
 }
 
 .contact__welcome {
@@ -538,8 +526,6 @@ main {
   color: #ffffff;
 }
 
-
-
 .phone {
   text-align: left;
   margin-top: 30px;
@@ -571,8 +557,8 @@ main {
 }
 
 .map {
-	width: 100%;
-	height: 400px;
+  width: 100%;
+  height: 400px;
 }
 
 .copyright {
@@ -622,15 +608,12 @@ footer {
     width: 80%;
     margin-bottom: 18px;
   }
-
   .sidebar-social {
     margin-bottom: 10px;
   }
-
   .sidebar-desc {
     margin-bottom: 20px;
   }
-
   .about {
     padding-top: 50px;
   }
@@ -640,46 +623,39 @@ footer {
   .container {
     grid-template-rows: auto auto auto;
     grid-template-columns: 1fr;
-    grid-template-areas: "sidebar"
-                         "main"
-                         "footer"
-                         "copyright";
+    grid-template-areas: "sidebar" "main" "footer" "copyright";
   }
-
   .sidebar {
     position: static;
     height: auto;
-    
   }
-
   .portfolio-block_num {
     width: calc(35% - 30px);
   }
-  
   .copyright {
     position: static;
   }
-
   .contact {
     text-align: center;
     padding: 50px 0;
   }
-
+  .contact__hi {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
   .contact-block_desc {
     width: 80%;
   }
-  
   .contact-block_map {
     width: 80%;
     text-align: center;
   }
-
   .map {
-    width: 70%;
-    height: 350px;
-}
-
+    margin: 0 auto;
+    width: 60%;
+    height: 250px;
+  }
   .phone {
-    text-align: center; 
+    text-align: center;
   }
 }
