@@ -18,7 +18,7 @@ img {
 
 .wrapper {
   background-color: #c2e3ff;
-  padding: 0 15px;
+  /* padding: 0 15px; */
 }
 
 .container {
@@ -684,4 +684,33 @@ footer {
   .number-block {
     margin: 15px;
   }
+
+  .resume {
+    display: block;
+    height: auto;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .resume__hi {
+    font-size: 50px;
+  }
+
+  .resume-block_desc {
+    width: calc(100% - 30px);
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+
+  .resume-block_num {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: calc(100% - 30px);
+    
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+    
 }
