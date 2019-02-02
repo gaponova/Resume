@@ -617,6 +617,29 @@ footer {
   margin: 0 10px;
 }
 
+/*----------Кнопка TOP----------*/
+
+#toTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  z-index: 99;
+  font-size: 25px;
+  background-color: #ffaa06;
+  color: #292b37;
+  outline: none;
+  cursor: pointer;
+  padding: 7px 17px;
+  border: 1px solid #ffaa06;
+  transition: 0.3s;
+}
+
+#toTop:hover {
+  color: #ffaa06;
+  background-color: #292b37;
+}
+
 @media screen and (max-width: 1024px) {
   .container {
     grid-template-rows: auto auto auto;
