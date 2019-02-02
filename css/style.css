@@ -622,6 +622,17 @@ footer {
   }
 }
 
+/*Кнопка для адаптивного меню*/
+
+.menuToggle {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1024px) {
   .container {
     grid-template-rows: auto auto auto;
@@ -665,6 +676,54 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+
+  .container {
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "footer" "sidebar" "main"  "copyright";
+  }
+
+  footer {
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    grid-area: footer;
+    background-color: #d4ebff;
+    text-align: center;
+    padding: 0 15px;
+}
+
+  .main-nav {
+    display: none;
+    position: absolute;
+    background-color: rgba(38, 59, 86, 0.8);
+    left: 0;
+    right: 0;
+    
+}
+
+.main-nav__link {
+    display: block;
+    color: #fff;
+    font-weight: normal;
+}
+
+.main-nav__link:first-child {
+  margin-top: 10px;
+}
+
+.main-nav__link:last-child {
+  margin-bottom: 10px;
+}
+
+.menuToggle {
+    display: block;
+    z-index: 100;
+}
+
+
   .about {
     display: block;
     height: auto;
@@ -710,6 +769,10 @@ footer {
     width: calc(100% - 30px);
     margin-bottom: 0;
     margin-top: 0;
+  }
+
+  .skills {
+    height: auto;
   }
   .portfolio {
     display: block;
@@ -769,5 +832,23 @@ footer {
     display: block;
     margin: 0 auto;
     line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .home__hi,
+  .resume__hi,
+  .portfolio__hi,
+  .skills__hi,
+  .about__hi {
+    font-size: 30px;
+  }
+
+  .skills-box__text {
+    margin-bottom: 10px;
+  }
+
+  .skills-box__item {
+    display: block;
   }
 }
