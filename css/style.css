@@ -18,7 +18,6 @@ img {
 
 .wrapper {
   background-color: #c2e3ff;
-  /* padding: 0 15px; */
 }
 
 .container {
@@ -43,7 +42,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 70px;
+  padding: 30px 15px;
 }
 
 .sidebar-avatar__pic {
@@ -120,8 +119,7 @@ main {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding: 10px;
-  padding-bottom: 50px;
+  padding: 50px 15px;
 }
 
 .home__welcome {
@@ -164,8 +162,7 @@ main {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  padding: 10px;
-  padding-bottom: 50px;
+  padding: 50px 15px;
 }
 
 .about-block_desc {
@@ -250,6 +247,7 @@ main {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  padding: 50px 15px;
 }
 
 .resume-block_desc {
@@ -313,6 +311,7 @@ main {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  padding: 50px 15px;
 }
 
 .skills__welcome {
@@ -412,6 +411,7 @@ main {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  padding: 50px 15px;
 }
 
 .portfolio-block_desc {
@@ -474,6 +474,7 @@ main {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  padding: 50px 15px;
 }
 
 .contact-block_desc {
@@ -572,6 +573,7 @@ main {
   color: #37506b;
   font-family: Open Sans, sans-serif;
   font-size: 12px;
+  padding: 0 15px;
 }
 
 footer {
@@ -583,6 +585,7 @@ footer {
   grid-area: footer;
   background-color: #d4ebff;
   text-align: center;
+  padding: 10px 15px;
 }
 
 .main-nav {
@@ -667,7 +670,6 @@ footer {
     height: auto;
     text-align: center;
   }
-
   .about__hi {
     font-size: 50px;
   }
@@ -684,7 +686,6 @@ footer {
   .number-block {
     margin: 15px;
   }
-
   .resume {
     display: block;
     height: auto;
@@ -692,44 +693,81 @@ footer {
     padding-bottom: 50px;
     padding-top: 50px;
   }
-
   .resume__hi,
   .portfolio__hi,
   .skills__hi {
     font-size: 50px;
   }
-
   .resume-block_desc {
     width: calc(100% - 30px);
     margin-bottom: 0;
     margin-top: 15px;
   }
-
   .resume-block_num {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     width: calc(100% - 30px);
-    
     margin-bottom: 0;
     margin-top: 0;
   }
-  
   .portfolio {
     display: block;
     height: auto;
     text-align: center;
     padding: 50px 15px;
   }
-
   .portfolio-block_desc {
     width: calc(100% - 30px);
     margin-top: 0;
   }
-
   .portfolio-block_num {
     width: calc(100% - 30px);
     display: flex;
     justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .home {
+    text-align: center;
+  }
+  .home__hi,
+  .resume__hi,
+  .portfolio__hi,
+  .skills__hi,
+  .about__hi {
+    font-size: 40px;
+  }
+  .number-block {
+    margin: 5px;
+    text-align: center;
+  }
+  .number-block__num {
+    font-size: 24px;
+  }
+  .number-block__text {
+    font-size: 12px;
+  }
+  .skills-row {
+    justify-content: center;
+  }
+  .lang {
+    text-align: center;
+  }
+  .contact-block_map {
+    display: none;
+  }
+  .phone {
+    text-align: center;
+  }
+  .phone__title {
+    margin-bottom: 20px;
+  }
+  .phone__img,
+  .phone__geo {
+    display: block;
+    margin: 0 auto;
+    line-height: 40px;
   }
 }
