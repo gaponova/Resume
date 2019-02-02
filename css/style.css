@@ -18,7 +18,6 @@ img {
 
 .wrapper {
   background-color: #c2e3ff;
-  padding: 0 15px;
 }
 
 .container {
@@ -28,8 +27,7 @@ img {
   display: grid;
   grid-template-rows: 1fr auto;
   grid-template-columns: 20% 1fr;
-  grid-template-areas: "sidebar main" 
-                        "copyright footer";
+  grid-template-areas: "sidebar main" "copyright footer";
 }
 
 .sidebar {
@@ -40,12 +38,11 @@ img {
   grid-area: sidebar;
   padding: 30px 30px;
   text-align: center;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 70px;
+  padding: 30px 15px;
 }
 
 .sidebar-avatar__pic {
@@ -116,16 +113,13 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   /* position: relative; */
   height: 100vh;
   background: linear-gradient(to top, rgba(12, 111, 228, 0.8), rgba(12, 111, 228, 0.8)), url(../images/main-bg.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-
-  padding: 10px;
-  padding-bottom: 50px;
+  padding: 50px 15px;
 }
 
 .home__welcome {
@@ -168,9 +162,7 @@ main {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-
-  padding: 10px;
-  padding-bottom: 50px;
+  padding: 50px 15px;
 }
 
 .about-block_desc {
@@ -181,7 +173,6 @@ main {
 .about-block_num {
   width: calc(20% - 30px);
   margin: 15px;
-
   text-align: right;
 }
 
@@ -251,12 +242,12 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-
   height: 100vh;
   background: linear-gradient(to top, rgba(12, 111, 228, 0.8), rgba(12, 111, 228, 0.8)), url(../images/main-bg.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  padding: 50px 15px;
 }
 
 .resume-block_desc {
@@ -315,12 +306,12 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-
   height: 100vh;
   background: linear-gradient(to top, rgba(12, 111, 228, 0.8), rgba(12, 111, 228, 0.8)), url(../images/rock-bg.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  padding: 50px 15px;
 }
 
 .skills__welcome {
@@ -378,7 +369,6 @@ main {
 }
 
 .progress__fill {
-  
   height: 4px;
   background-color: #fff;
 }
@@ -416,12 +406,12 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-
   height: 100vh;
   background: linear-gradient(to top, rgba(12, 111, 228, 0.8), rgba(12, 111, 228, 0.8)), url(../images/mountain-bg.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  padding: 50px 15px;
 }
 
 .portfolio-block_desc {
@@ -479,12 +469,12 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
   height: 100vh;
   background: linear-gradient(to top, rgba(12, 111, 228, 0.8), rgba(12, 111, 228, 0.8)), url(../images/rock-bg.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  padding: 50px 15px;
 }
 
 .contact-block_desc {
@@ -495,7 +485,6 @@ main {
 .contact-block_map {
   width: calc(50% - 30px);
   margin: 15px;
- 
 }
 
 .contact__welcome {
@@ -538,8 +527,6 @@ main {
   color: #ffffff;
 }
 
-
-
 .phone {
   text-align: left;
   margin-top: 30px;
@@ -571,8 +558,8 @@ main {
 }
 
 .map {
-	width: 100%;
-	height: 400px;
+  width: 100%;
+  height: 400px;
 }
 
 .copyright {
@@ -586,6 +573,7 @@ main {
   color: #37506b;
   font-family: Open Sans, sans-serif;
   font-size: 12px;
+  padding: 0 15px;
 }
 
 footer {
@@ -597,6 +585,7 @@ footer {
   grid-area: footer;
   background-color: #d4ebff;
   text-align: center;
+  padding: 10px 15px;
 }
 
 .main-nav {
@@ -617,63 +606,273 @@ footer {
   margin: 0 10px;
 }
 
+@media screen and (max-width: 1368px) {
+  .sidebar-avatar__pic {
+    width: 80%;
+    margin-bottom: 18px;
+  }
+  .sidebar-social {
+    margin-bottom: 10px;
+  }
+  .sidebar-desc {
+    margin-bottom: 20px;
+  }
+  .about {
+    padding-top: 50px;
+  }
+}
+
 /*----------Кнопка TOP----------*/
 
 #toTop {
   display: none;
   position: fixed;
-  bottom: 20px;
-  right: 5px;
+  bottom: 10px;
+  right: 10px;
   z-index: 99;
   font-size: 25px;
-  background-color: #ffaa06;
+  background-color: #97ceff;
   color: #292b37;
   outline: none;
   cursor: pointer;
   padding: 7px 17px;
-  border: 1px solid #ffaa06;
+  border-radius: 5px;
   transition: 0.3s;
 }
 
-#toTop:hover {
+/* #toTop:hover {
   color: #ffaa06;
   background-color: #292b37;
+} */
+
+/*Кнопка для адаптивного меню*/
+
+.menuToggle {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1024px) {
   .container {
     grid-template-rows: auto auto auto;
     grid-template-columns: 1fr;
-    grid-template-areas: "sidebar"
-                         "main"
-                         "footer"
-                         "copyright";
+    grid-template-areas: "sidebar" "main" "footer" "copyright";
   }
-
   .sidebar {
     position: static;
     height: auto;
-    
+    padding-bottom: 25px;
   }
-  
+  .portfolio-block_num {
+    width: calc(35% - 30px);
+  }
   .copyright {
     position: static;
   }
-
   .contact {
     text-align: center;
     padding: 50px 0;
   }
-
+  .contact__hi {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
   .contact-block_desc {
     width: 80%;
-    
   }
-  
   .contact-block_map {
     width: 80%;
+    text-align: center;
+  }
+  .map {
+    margin: 0 auto;
+    width: 60%;
+    height: 250px;
+  }
+  .phone {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "footer" "sidebar" "main"  "copyright";
   }
 
+  footer {
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    grid-area: footer;
+    background-color: #d4ebff;
+    text-align: center;
+    padding: 0 15px;
+}
+
+  .main-nav {
+    display: none;
+    position: absolute;
+    background-color: rgba(38, 59, 86, 0.8);
+    left: 0;
+    right: 0;
+    
+}
+
+.main-nav__link {
+    display: block;
+    color: #fff;
+    font-weight: normal;
+    margin: 0;
+}
+
+.main-nav__link:first-child {
+  margin-top: 10px;
+}
+
+.main-nav__link:last-child {
+  margin-bottom: 10px;
+}
+
+.menuToggle {
+    display: block;
+    z-index: 100;
+}
+
+
+  .about {
+    display: block;
+    height: auto;
+    text-align: center;
+  }
+  .about__hi {
+    font-size: 50px;
+  }
+  .about-block_desc {
+    width: calc(100% - 30px);
+    margin-bottom: 50px;
+  }
+  .about-block_num {
+    display: flex;
+    justify-content: space-around;
+    width: calc(100% - 30px);
+    margin-bottom: 0;
+  }
+  .number-block {
+    margin: 15px;
+  }
+  .resume {
+    display: block;
+    height: auto;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .resume__hi,
+  .portfolio__hi,
+  .skills__hi {
+    font-size: 50px;
+  }
+  .resume-block_desc {
+    width: calc(100% - 30px);
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+  .resume-block_num {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: calc(100% - 30px);
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .skills {
+    height: auto;
+  }
+  .portfolio {
+    display: block;
+    height: auto;
+    text-align: center;
+    padding: 50px 15px;
+  }
+  .portfolio-block_desc {
+    width: calc(100% - 30px);
+    margin-top: 0;
+  }
+  .portfolio-block_num {
+    width: calc(100% - 30px);
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .home {
+    text-align: center;
+  }
+  .home__hi,
+  .resume__hi,
+  .portfolio__hi,
+  .skills__hi,
+  .about__hi {
+    font-size: 40px;
+  }
+  .number-block {
+    margin: 5px;
+    text-align: center;
+  }
+  .number-block__num {
+    font-size: 24px;
+  }
+  .number-block__text {
+    font-size: 12px;
+  }
+  .skills-row {
+    justify-content: center;
+  }
+  .lang {
+    text-align: center;
+  }
+  .contact-block_map {
+    display: none;
+  }
   .phone {
-    text-align: center; }
+    text-align: center;
+  }
+  .phone__title {
+    margin-bottom: 20px;
+  }
+  .phone__img,
+  .phone__geo {
+    display: block;
+    margin: 0 auto;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .home__hi,
+  .resume__hi,
+  .portfolio__hi,
+  .skills__hi,
+  .about__hi {
+    font-size: 30px;
+  }
+
+  .skills-box__text {
+    margin-bottom: 10px;
+  }
+
+  .skills-box__item {
+    display: block;
+  }
 }
