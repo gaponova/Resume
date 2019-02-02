@@ -651,6 +651,10 @@ footer {
     height: auto;
     
   }
+
+  .portfolio-block_num {
+    width: calc(35% - 30px);
+  }
   
   .copyright {
     position: static;
@@ -663,13 +667,19 @@ footer {
 
   .contact-block_desc {
     width: 80%;
-    
   }
   
   .contact-block_map {
     width: 80%;
+    text-align: center;
   }
 
+  .map {
+    width: 70%;
+    height: 350px;
+}
+
   .phone {
-    text-align: center; }
+    text-align: center; 
+  }
 }
